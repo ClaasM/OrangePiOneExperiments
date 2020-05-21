@@ -3,8 +3,6 @@ import OPi.GPIO as GPIO  # this was installed by sudo, so
 
 from time import sleep  # this lets us have a time delay
 
-from Adafruit_Python_DHT import Adafruit_DHT
-
 GPIO.setboard(GPIO.PCPCPLUS)  # ZERO
 GPIO.setmode(GPIO.BOARD)
 
@@ -21,7 +19,6 @@ try:
     while True:
         clkState = GPIO.input(clk)
         dtState = GPIO.input(dt)
-        # print(dtState, clkState)
         if clkState != clkLastState:
             if dtState != clkState:
                 counter += 1
