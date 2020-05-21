@@ -5,7 +5,6 @@ from time import sleep  # this lets us have a time delay
 GPIO.setboard(GPIO.PCPCPLUS)  # ZERO
 GPIO.setmode(GPIO.BOARD)
 
-# GPIO usable Pins are: 3,5,7,8,10,11,12,13,15,16,18,19,21,22,23,24,26,27,28,29,31,32,33,35,36,337,38,40
 R_PIN = 33
 G_PIN = 35
 B_PIN = 37
@@ -17,6 +16,7 @@ GPIO.setup(B_PIN, GPIO.OUT)
 
 try:
     while True:
+        # RGB mixing doesn't really work with this LED
         sleep(period)
         GPIO.output(R_PIN, 0)
         GPIO.output(G_PIN, 1)
