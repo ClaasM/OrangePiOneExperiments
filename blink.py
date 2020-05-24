@@ -2,10 +2,11 @@ import OPi.GPIO as GPIO  # this was installed by sudo, so
 
 from time import sleep  # this lets us have a time delay
 
-GPIO.setboard(GPIO.PCPCPLUS)  # ZERO
+GPIO.setboard(GPIO.ZERO)  # ZERO
 GPIO.setmode(GPIO.BOARD)
 
-pin = 3
+# Usable Pins on the Zero: 7, 12, 15, ...
+pin = 15
 period = 0.5
 
 GPIO.setup(pin, GPIO.OUT)

@@ -7,6 +7,12 @@ The sketches should be self-explanatory.
 
 ## Getting Started
 
+### Installing Python Header files
+
+Required to install IO libraries, such as OrangePi.GPIO
+
+`sudo apt-get install python3-dev`
+
 ### Insalling the IO library
 
 `sudo pip3 install OrangePi.GPIO`
