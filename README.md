@@ -13,10 +13,18 @@ Required to install IO libraries, such as OrangePi.GPIO
 
 `sudo apt-get install python3-dev`
 
-### Insalling the IO library
+### Installing the IO library
 
 `sudo pip3 install OrangePi.GPIO`
+
+### Configuring I2C
+
+Only required to use the MPU.
  
+`sudo apt-get install python3-smbus i2c-tools`
+
+`armbian-config` -> `system` -> `hardware` -> `i2c0` and use space key to select. Save and reboot.
+
  ## Troubleshooting:
  Typical things that can go wrong:
  - Not all color LEDs survive 3.3V
