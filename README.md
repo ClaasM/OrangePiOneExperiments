@@ -7,6 +7,36 @@ The sketches should be self-explanatory.
 
 ## Getting Started
 
+### Creating a bootable SD card (Armbian Focal)
+
+Focal means based on Ubuntu
+
+### Creating a bootable SD card (Ubuntu)
+
+(Using Ubuntu image from OrangePi)
+
+Default username: `orangepi`
+
+Default password: `orangepi`
+
+For Armbian: root/1234 (and then you are forced to set a PW)
+
+### Connect to Wifi
+
+After connecting via Ethernet, check router interface for the Pi's IP.
+
+SSH into it: `ssh orangepi@<ip>`
+
+Password: `orangepi`
+ 
+Use `nmtui` to connect to WiFi.
+
+Again, get the WiFi IP from e.g. your Router's interface.
+Validate you can SSH via that IP as well.
+You can now disconnect the Ethernet connection.
+ 
+
+Alternatively, you can edit the image - most OS's can be configured to connect to a WiFi on initial boot.
 ### Installing Python Header files
 
 Required to install IO libraries, such as OrangePi.GPIO
