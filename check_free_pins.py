@@ -1,5 +1,5 @@
 print("Hello World")
-# Using a DSB18B20
+# Blink all Pins that can be set to I/O out
 
 
 import OPi.GPIO as GPIO  # this was installed by sudo, so
@@ -18,22 +18,24 @@ try:
             working.append(i)
             print(i)
         except ValueError as e:
+            print(e)
             pass
 
     while True:
         for i in working:
             GPIO.output(i, 1)
+            print(i)
+            print("On")
         sleep(0.5)
         for i in working:
             GPIO.output(i, 0)
+            print(i)
+            print("Off")
 
 except KeyboardInterrupt:
     GPIO.cleanup()  # Clean GPIO
     print("Bye.")
-except Exception as e:
-    print(e)
-    GPIO.cleanup()
-    raise e
+
 
 """
 7

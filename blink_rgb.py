@@ -18,13 +18,13 @@ try:
     while True:
         # RGB mixing doesn't really work with this LED
         sleep(period)
-        #GPIO.output(R_PIN, 0)
+        GPIO.output(R_PIN, 0)
         GPIO.output(G_PIN, 1)
         sleep(period)
-        #GPIO.output(G_PIN, 0)
+        GPIO.output(G_PIN, 0)
         GPIO.output(B_PIN, 1)
         sleep(period)
-        #GPIO.output(B_PIN, 0)
+        GPIO.output(B_PIN, 0)
         GPIO.output(R_PIN, 1)
 except KeyboardInterrupt:
     GPIO.output(R_PIN, 0)  # set port/pin value to 0/LOW/False

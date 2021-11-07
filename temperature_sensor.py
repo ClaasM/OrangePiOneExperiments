@@ -2,6 +2,7 @@ print("Hello World")
 # Using a DSB18B20, following this tutorial: https://blog.ja-ke.tech/2019/01/21/DS18B20-armbian.html
 
 import time
+# noinspection PyUnresolvedReferences
 from w1thermsensor import W1ThermSensor
 sensor = W1ThermSensor()
 
