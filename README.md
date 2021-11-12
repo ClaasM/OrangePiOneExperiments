@@ -10,7 +10,8 @@ The sketches should be self-explanatory.
 ### Creating a bootable SD card (Armbian Focal)
 
 Focal means based on Ubuntu.
-Used for most of these scripts, generally works better out of the box.
+
+*Used for most of these scripts, generally works better out of the box.*
 
 Default username: `root`
 
@@ -61,6 +62,14 @@ Only required to use the MPU.
 ### Configurint W1 (one wire)
 
 https://blog.ja-ke.tech/2019/01/21/DS18B20-armbian.html
+
+## Running something while disconnecting from the Terminal
+
+`tmux`
+`cd /home/orangepi/tmp/pycharm_project_785/`
+`python3 solar_thermal/control.py`
+`crtl+b d`
+`tmux attach`
 
  ## Troubleshooting:
  
