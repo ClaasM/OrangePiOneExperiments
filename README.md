@@ -11,6 +11,14 @@ The sketches should be self-explanatory.
 
 Focal means based on Ubuntu.
 
+Using USBImager or:
+
+`diskutil list`
+
+`diskutil `
+
+`sudo dd if=path_of_your_image.img of=/dev/rdiskn bs=1m`
+
 *Used for most of these scripts, generally works better out of the box.*
 
 Default username: `root`
