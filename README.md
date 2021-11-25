@@ -57,17 +57,22 @@ Required to install IO libraries, such as OrangePi.GPIO
 
 ### Installing the IO library
 
+`sudo apt install python3-pip`
 `sudo pip3 install OrangePi.GPIO`
 
 ### Configuring I2C
 
-Only required to use the MPU.
+Only required to use the MPU or ADS1115 ADC.
  
 `sudo apt-get install python3-smbus i2c-tools`
 
 `armbian-config` -> `system` -> `hardware` -> `i2c0` and use space key to select. Save and reboot.
 
 ### Configurint W1 (one wire)
+
+Same, but also enable w1-gpio
+
+And follow: 
 
 https://blog.ja-ke.tech/2019/01/21/DS18B20-armbian.html
 

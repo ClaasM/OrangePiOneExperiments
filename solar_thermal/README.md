@@ -16,6 +16,6 @@ Using Orange Pi Zero.
 - Relais Signal to PIN 3
 - Both powered by 5V
 
-
+## Setting up one-wire
     
     

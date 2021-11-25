@@ -11,7 +11,7 @@ Using Orange Pi One.
 
 ## Wiring
 
-- See wiring.png
+- See wiring.png (SDA0/SCK0 are also pins 3 and 5 on orangepi)
 
 ## Setup
 
@@ -21,6 +21,13 @@ OR
 
 sudo nano /boot/armbianEnv.txt
 overlays=i2c0
+
+(Also need W1)
+
+##
+
+Running in background:
+
 
 ## Troubleshooting
 
