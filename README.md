@@ -35,6 +35,8 @@ Default username: `orangepi`
 
 Default password: `orangepi`
 
+Current password: real password, saved in Keychain
+
 ### Connect to Wifi
 
 After connecting via Ethernet, check router interface for the Pi's IP.
@@ -83,6 +85,17 @@ https://blog.ja-ke.tech/2019/01/21/DS18B20-armbian.html
 `python3 solar_thermal/control.py`
 `crtl+b d`
 `tmux attach`
+
+or
+
+tmux new-session -d -s my_session "cd /home/orangepi/tmp/pycharm_project_523/soil_moisture/ && python3 soil_moisture.py"
+
+crontab -e
+@reboot /home/orangepi/tmp/pycharm_project_523/soil_moisture/tmux_start.sh
+
+to kill:
+
+tmux kill-server
 
  ## Troubleshooting:
  
