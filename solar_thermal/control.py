@@ -16,7 +16,7 @@ GPIO.setup(PIN, GPIO.OUT)
 
 # TODO add warning if script older than x seconds s.t. we notice if upload didn't work
 
-token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEZXZpY2VDYWxsYmFja19PUGlaZXJvIiwidXNyIjoiQ2xhYXNNIn0.eofMQdQXnVD8YhCXQlUmNhROWUPNntDbf-aHSRhsOMM"
+token = "Bearer add_token"
 thinger_url = "https://backend.thinger.io/v3/users/ClaasM/devices/OPiZero/callback/data"
 
 last_measurements = []
